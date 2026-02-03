@@ -50,5 +50,11 @@ public class Product {
                 '}';
     }
 
+    public String toCSV()
+    {
+        String CSV = this.name + ", " + this.description + ", " + this.ID + ", " + this.cost;
+        return CSV;
+    }
+
 
 }
