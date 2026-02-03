@@ -19,7 +19,7 @@ YearOfBirth (an int)
     File workingDirectory = new File(System.getProperty("user.dir"));
     Path file = Paths.get(workingDirectory.getPath() + "\\src\\PersonTestData.txt");
 
-    ArrayList<String> folks = new ArrayList<>();
+    ArrayList<Person> folks = new ArrayList<>();
     Scanner in = new Scanner(System.in);
 
     boolean done = false;
@@ -37,13 +37,13 @@ YearOfBirth (an int)
         title = SafeInput.getNonZeroLenString(in, "Enter the title");
         YOB = SafeInput.getRangedInt(in, "Enter the year of birth", 1940, 2010);
 
-        personRec = ID + ", " + firstName + ", " + lastName + ", " + title + ", " + YOB;
-        folks.add(personRec);
+        Person person = new Person(ID, firstName, lastName, title, YOB);
+        folks.add(person);
 
         done = SafeInput.getYNConfirm(in, "Are you done?");
     }while(!done);
 
-    for(String p: folks)
+    for(Person p: folks)
         System.out.println(p);
 
     try
@@ -57,9 +57,9 @@ YearOfBirth (an int)
 
         // Finally can write the file LOL!
 
-        for(String rec : folks)
+        for(Person rec : folks)
         {
-            writer.write(rec, 0, rec.length());  // stupid syntax for write rec
+            writer.write(rec.toCSV());  // stupid syntax for write rec
             // 0 is where to start (1st char) the write
             // rec. length() is how many chars to write (all)
             writer.newLine();  // adds the new line

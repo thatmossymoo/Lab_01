@@ -74,6 +74,7 @@ public class PersonReader {
                 // Numbers need to be converted back to numeric values. Here only
                 // the last field year of birth yob is an int the rest are strings.
                 String[] fields;
+                ArrayList<Person> folks = new ArrayList<>();
                 System.out.println("ID#     Firstname                Lastname                Title   YOB");
                 System.out.println("=======================================================================");
                 for(String l:lines)
@@ -87,12 +88,23 @@ public class PersonReader {
                         lastName  = fields[2].trim();
                         title     = fields[3].trim();
                         yob       = Integer.parseInt(fields[4].trim());
-                        System.out.printf("\n%-8s%-25s%-25s%-6s%6d", id, firstName, lastName, title, yob);
+                        Person person = new Person(id, firstName, lastName, title, yob);
+                        folks.add(person);
                     }
                     else
                     {
                         System.out.println("Found a record that may be corrupt: ");
                         System.out.println(l);
+                    }
+
+                    for (Person person : folks){
+                        id = person.getID();
+                        firstName = person.getFirstName();
+                        lastName = person.getLastName();
+                        title = person.getTitle();
+                        yob = person.getYOB();
+
+                        System.out.printf("\n%-8s%-25s%-25s%-6s%6d", id, firstName, lastName, title, yob);
                     }
                 }
 

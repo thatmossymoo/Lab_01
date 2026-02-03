@@ -88,6 +88,21 @@ public class Person {
 
     public String toCSV()
     {
+        String CSV = this.firstName + ", " + this.lastName + ", " + this.ID + ", " + this.title + ", " + this.YOB;
+        return CSV;
+    }
 
+    public String toJSON()
+    {
+        String JSON = "\"firstName\": \"" + this.firstName + "\",\n \"lastName\": \"" + this.lastName + "\",\n\"ID\":\"" + this.ID
+                + "\",\n \"title\": \"" + this.title + "\",\n \"YOB\": \"" + this.YOB;
+        return JSON;
+    }
+
+    public String toXML()
+    {
+        String XML = "<person>\n\n" + "<firstName>" + this.firstName + "</firstName>" + "\n<lastName>" + this.lastName + "</lastName>"
+                + "\n<ID>" + this.ID + "</ID>" + "\n<title>" + this.title + "</title>" + "\n<YOB>" + this.YOB + "</YOB>";
+        return XML;
     }
 }
