@@ -102,7 +102,7 @@ public class Person {
     public String toXML()
     {
         String XML = "<person>\n\n" + "<firstName>" + this.firstName + "</firstName>" + "\n<lastName>" + this.lastName + "</lastName>"
-                + "\n<ID>" + this.ID + "</ID>" + "\n<title>" + this.title + "</title>" + "\n<YOB>" + this.YOB + "</YOB>";
+                + "\n<ID>" + this.ID + "</ID>" + "\n<title>" + this.title + "</title>" + "\n<YOB>" + this.YOB + "</YOB>" + "\n\n </person>";
         return XML;
     }
 }

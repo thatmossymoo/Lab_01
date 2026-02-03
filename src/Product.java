@@ -56,5 +56,19 @@ public class Product {
         return CSV;
     }
 
+    public String toJSON()
+    {
+        String JSON = "\"name\": \"" + this.name + "\",\n \"description\": \"" + this.description + "\",\n\"ID\":\"" + this.ID
+                + "\",\n \"cost\": \"" + this.cost;
+        return JSON;
+    }
+
+    public String toXML()
+    {
+        String XML = "<product>\n\n" + "<name>" + this.name + "</name>" + "\n<description>" + this.description + "</description>"
+                + "\n<ID>" + this.ID + "</ID>" + "\n<cost>" + this.cost + "</cost>" + "\n\n</product>";
+        return XML;
+    }
+
 
 }
