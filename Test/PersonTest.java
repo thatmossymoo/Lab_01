@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PersonTest {
 
@@ -15,15 +16,31 @@ public class PersonTest {
     @org.junit.jupiter.api.Test
     void setLastName() {
         p1.setLastName("Smith");
+        assertEquals("Smith",p1.getLastName());
 
     }
 
     @org.junit.jupiter.api.Test
     void setTitle() {
         p2.setTitle("Mrs.");
+        assertEquals("Mrs.", p2.getTitle());
     }
 
     @org.junit.jupiter.api.Test
     void testToString() {
+        String expectedPerson = "Person{" +
+            "ID='" + p1.getID() + '\'' +
+            ", firstName='" + p1.getFirstName() + '\'' +
+            ", lastName='" + p1.getLastName() + '\'' +
+            ", title='" + p1.getTitle() + '\'' +
+            ", YOB=" + p1.getYOB() +
+            '}';
+        assertEquals(expectedPerson, p1.toString());
+    }
+
+    @Test
+    void setFirstName() {
+        p3.setFirstName("Andrea");
+        assertEquals("Andrea",p3.getFirstName());
     }
 }

@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f65971ed-8349-4a9a-ab64-2c2642832ce6" name="Changes" comment="bada bing bada boom">
+    <list default="true" id="f65971ed-8349-4a9a-ab64-2c2642832ce6" name="Changes" comment="started PersonTest, can't get assertEquals to work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_01.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/PersonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/ProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/ProductTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +48,7 @@
   "keyToString": {
     "Application.PersonTest.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.PersonTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -100,7 +100,8 @@
       <updated>1769455416815</updated>
       <workItem from="1769455420072" duration="7904000" />
       <workItem from="1770077144935" duration="7327000" />
-      <workItem from="1770322111357" duration="2055000" />
+      <workItem from="1770322111357" duration="2115000" />
+      <workItem from="1770396071531" duration="2402000" />
     </task>
     <task id="LOCAL-00001" summary="ahhhhhhhhhh">
       <option name="closed" value="true" />
@@ -134,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770083470679</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="started PersonTest, can't get assertEquals to work">
+      <option name="closed" value="true" />
+      <created>1770324219501</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1770324219501</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +154,7 @@
     <MESSAGE value="Starting Product" />
     <MESSAGE value="Midway through Product" />
     <MESSAGE value="bada bing bada boom" />
-    <option name="LAST_COMMIT_MESSAGE" value="bada bing bada boom" />
+    <MESSAGE value="started PersonTest, can't get assertEquals to work" />
+    <option name="LAST_COMMIT_MESSAGE" value="started PersonTest, can't get assertEquals to work" />
   </component>
 </project>
